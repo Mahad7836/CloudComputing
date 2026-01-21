@@ -18,5 +18,32 @@
 * **Benefit:** Backend services do not need to be in Google Cloud.
 
 ## Messaging
-### Pub/Sub
-* *Note: Add details here after watching the Pub/Sub module.*
+# Pub/Sub – Notes
+
+## Overview
+- Google Cloud Pub/Sub is a **messaging service**
+- Used in the **early stage of data ingestion**
+- Data may **not come from a single database**
+- **IoT data** is a common example
+
+## Challenges
+- Data can be streamed from **many devices**
+- Hard to send or distribute data to the **right subscribers**
+- Data can arrive **quickly and in high volume**
+- Need to ensure **reliable services**
+
+## Publisher–Subscriber Model
+- Uses a **publisher–subscriber** pattern
+- Publishers send messages
+- Subscribers receive messages
+
+## Core Concepts
+- **Topic** is the central element of Pub/Sub
+- Ensures **at-least-once delivery**
+
+## Features
+- **No provisioning required**
+- **Open APIs**
+- **Global by default**
+- Supports: **ingest → read → ingest → visualize**
+- Good solution to **buffer changes**
